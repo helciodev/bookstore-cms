@@ -11,7 +11,7 @@ function BooksList() {
           </tr>
         </thead>
         <tbody>
-          <Book />
+          <Book book={{ id: 2, title: '', category: '' }} />
         </tbody>
       </table>
     </div>
