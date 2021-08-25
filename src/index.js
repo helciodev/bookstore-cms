@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 
-const hello = <h1>Hello, bookstore cms</h1>;
 ReactDOM.render(
-  hello,
+  <App />,
   document.getElementById('root'),
 );
 
