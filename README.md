@@ -28,7 +28,7 @@ to add
 
 This project is hosted on Heroku.
 
-[Live demo link](https://math-magicians-helcio.herokuapp.com/)
+[Live demo link](https://secure-brook-33909.herokuapp.com/)
 
 ## Built With
 
@@ -45,13 +45,13 @@ Follow along the steps below to get a copy at your local machine.
 - Navigate to the directory where you want this project to clone and then clone it
 
   ```
-  git clone git@github.com:helciodev/math-magicians.git
+  git clone git@github.com:helciodev/bookstore-cms.git
   ```
 
-- Navigate to the `math-magicians` directory
+- Navigate to the `bookstore-cms` directory
 
   ```
-  cd math-magicians
+  cd bookstore-cms
   ```
 
 - Install the npm package with `npm install`
@@ -60,7 +60,7 @@ Follow along the steps below to get a copy at your local machine.
 
 ### testing
 
-- Run npm test to run tests
+- To add
 
 ## Author
 
