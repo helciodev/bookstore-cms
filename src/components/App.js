@@ -1,12 +1,12 @@
 import React from 'react';
-import BooksForm from 'BooksForm';
-import BooksList from 'BooksList';
+import BooksForm from '../reducers/BooksForm';
+import BooksList from '../reducers/BooksList';
 
 function App() {
   return (
     <>
-      <BooksList />
       <BooksForm />
+      <BooksList />
     </>
   );
 }

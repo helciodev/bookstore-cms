@@ -1,5 +1,5 @@
 import React from 'react';
-import Book from 'Book';
+import Book from '../components/Book';
 
 function BooksList() {
   return (
@@ -11,7 +11,7 @@ function BooksList() {
           </tr>
         </thead>
         <tbody>
-          <Book book={{ id: 2, title: '', category: '' }} />
+          <Book id="" title="" category="" />
         </tbody>
       </table>
     </div>
