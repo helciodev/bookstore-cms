@@ -2,6 +2,7 @@ import React from 'react';
 
 function BooksForm() {
   const collection = [
+    '--categories--',
     'Action',
     'History',
     'Biography',
