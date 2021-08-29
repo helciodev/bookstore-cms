@@ -17,7 +17,7 @@ function BooksForm() {
         <input type="text" placeholder="book title" />
         <select>
           {collection.map((category) => (
-            <option key={category.id}>
+            <option key={category} value={category}>
               {' '}
               {category}
               {' '}

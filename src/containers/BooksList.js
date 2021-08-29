@@ -1,11 +1,9 @@
 import React from 'react';
-// import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Book from '../components/Book';
 
 function BooksList() {
-  // const books = useSelector((preloadState) => preloadState.books);
-  // console.log(books);
-
+  const books = useSelector((state) => state.booksReducer);
   return (
     <div>
       <table>
@@ -15,7 +13,14 @@ function BooksList() {
           </tr>
         </thead>
         <tbody>
-          <Book id="" title="" category="" />
+          {books.map((book) => (
+            <Book
+              key={book.id}
+              id={book.id}
+              title={book.title}
+              category={book.category}
+            />
+          ))}
         </tbody>
       </table>
     </div>

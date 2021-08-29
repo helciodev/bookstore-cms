@@ -7,47 +7,47 @@ import App from './components/App';
 import rootReducer from './reducers/index';
 
 const preloadState = {
-  books: [
+  booksReducer: [
     {
-      id: Math.random().toString(),
+      id: Math.random().toFixed(2).toString(),
       title: 'Billy Summers',
       category: 'Action',
     },
     {
-      id: Math.random().toString(),
+      id: Math.random().toFixed(2).toString(),
       title: 'Steve Jobs',
       category: 'Biography',
     },
     {
-      id: Math.random().toString(),
+      id: Math.random().toFixed(2).toString(),
       title: 'Where the Wild Things are',
       category: 'Kids',
     },
     {
-      id: Math.random().toString(),
+      id: Math.random().toFixed(2).toString(),
       title: '1984',
       category: 'Sci-Fi',
     },
     {
-      id: Math.random().toString(),
+      id: Math.random().toFixed(2).toString(),
       title: '1776',
       category: 'History',
     },
     {
-      id: Math.random().toString(),
+      id: Math.random().toFixed(2).toString(),
       title: 'The Bad Seed',
       category: 'Horror',
     },
     {
-      id: Math.random().toString(),
+      id: Math.random().toFixed(2).toString(),
       title: 'Mastery',
       category: 'Learning',
     },
+
   ],
 };
-const store = createStore(rootReducer, preloadState);
 
-console.log(store);
+const store = createStore(rootReducer, preloadState);
 ReactDOM.render(
   <Provider store={store}>
     <App />
