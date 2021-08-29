@@ -3,6 +3,9 @@ import React from 'react';
 import Book from '../components/Book';
 
 function BooksList() {
+  // const books = useSelector((preloadState) => preloadState.books);
+  // console.log(books);
+
   return (
     <div>
       <table>

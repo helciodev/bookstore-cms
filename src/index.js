@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
 import App from './components/App';
-import store from './store';
+import rootReducer from './reducers/index';
 
-const initialState = {
+const preloadState = {
   books: [
     {
       id: Math.random().toString(),
@@ -44,9 +45,9 @@ const initialState = {
     },
   ],
 };
+const store = createStore(rootReducer, preloadState);
 
-export default { initialState };
-
+console.log(store);
 ReactDOM.render(
   <Provider store={store}>
     <App />
