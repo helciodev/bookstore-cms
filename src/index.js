@@ -1,17 +1,56 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { createStore } from 'redux';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
+
 import App from './components/App';
+import store from './store';
 
-// const initialState = {
+const initialState = {
+  books: [
+    {
+      id: Math.random().toString(),
+      title: 'Billy Summers',
+      category: 'Action',
+    },
+    {
+      id: Math.random().toString(),
+      title: 'Steve Jobs',
+      category: 'Biography',
+    },
+    {
+      id: Math.random().toString(),
+      title: 'Where the Wild Things are',
+      category: 'Kids',
+    },
+    {
+      id: Math.random().toString(),
+      title: '1984',
+      category: 'Sci-Fi',
+    },
+    {
+      id: Math.random().toString(),
+      title: '1776',
+      category: 'History',
+    },
+    {
+      id: Math.random().toString(),
+      title: 'The Bad Seed',
+      category: 'Horror',
+    },
+    {
+      id: Math.random().toString(),
+      title: 'Mastery',
+      category: 'Learning',
+    },
+  ],
+};
 
-// }
-// const store = createStore();
+export default { initialState };
 
 ReactDOM.render(
-
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root'),
 );
 

@@ -1,7 +1,8 @@
-import initialState from '../index';
+import { REMOVE_BOOK, CREATE_BOOK } from '../actions/index';
 
-const REMOVE_BOOK = 'REMOVE_BOOK';
-const CREATE_BOOK = 'CREATE_BOOK';
+const initialState = {
+  books: [],
+};
 
 function booksReducer(state = initialState, action) {
   if (action.type === REMOVE_BOOK) { /* */ }
