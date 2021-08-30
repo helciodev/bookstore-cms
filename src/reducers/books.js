@@ -5,9 +5,21 @@ const initialState = {
 };
 
 function booksReducer(state = initialState, action) {
-  if (action.type === REMOVE_BOOK) { /* */ }
+  if (action.type === REMOVE_BOOK) {
+    return {
+      books: state.books.filter((book) => book !== book.id),
+    };
+  }
 
-  if (action.type === CREATE_BOOK) { /* */ }
+  if (action.type === CREATE_BOOK) {
+    return {
+      books: state.books.push({
+        id: action.id,
+        title: action.id,
+        category: action.category,
+      }),
+    };
+  }
 
   return state;
 }
