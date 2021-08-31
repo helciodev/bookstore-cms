@@ -1,6 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { createBook } from '../actions/index';
 
 function BooksForm() {
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
+
+  const dispatch = useDispatch();
+
+  function handleChange(event) {
+    const { name, value } = event.target;
+    if (name === 'title') {
+      setTitle(value);
+    } else if (name === 'category') {
+      setCategory(value);
+    }
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    dispatch(createBook({
+      id: Date.now().toString(),
+      title,
+      category,
+    }));
+    setTitle('');
+    setCategory('');
+  }
   const collection = [
     '--categories--',
     'Action',
@@ -11,11 +37,16 @@ function BooksForm() {
     'Learning',
     'Sci-fi',
   ];
+
   return (
     <div>
       <form action="">
-        <input type="text" placeholder="book title" />
-        <select>
+        <input type="text" name="title" value={title} onChange={handleChange} placeholder="book title" />
+        <select
+          value={category}
+          name="category"
+          onChange={handleChange}
+        >
           {collection.map((category) => (
             <option key={category} value={category}>
               {' '}
@@ -24,7 +55,7 @@ function BooksForm() {
             </option>
           ))}
         </select>
-        <button type="submit">submit</button>
+        <button type="submit" onClick={handleSubmit}>submit</button>
       </form>
     </div>
   );
