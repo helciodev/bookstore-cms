@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { createBook } from '../actions/index';
 
 function BooksForm() {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
+
+  const dispatch = useDispatch();
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -13,6 +17,17 @@ function BooksForm() {
     }
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    dispatch(createBook({
+      id: Date.now().toString,
+      title,
+      category,
+    }));
+    setTitle('');
+    setCategory('');
+    console.log(title, category);
+  }
   const collection = [
     '--categories--',
     'Action',
@@ -42,7 +57,7 @@ function BooksForm() {
             </option>
           ))}
         </select>
-        <button type="submit">submit</button>
+        <button type="submit" onClick={handleSubmit}>submit</button>
       </form>
     </div>
   );

@@ -7,17 +7,20 @@ const initialState = {
 function booksReducer(state = initialState, action) {
   if (action.type === REMOVE_BOOK) {
     return {
-      books: state.books.filter((book) => book !== book.id),
+      books: state.books.filter((book) => book.id !== action.book.id),
     };
   }
 
   if (action.type === CREATE_BOOK) {
     return {
-      books: state.books.push({
-        id: action.id,
-        title: action.id,
-        category: action.category,
-      }),
+      books: [
+        ...state.books,
+        {
+          id: Date.now(),
+          title: action.book.title,
+          category: action.book.category,
+        },
+      ],
     };
   }
 
