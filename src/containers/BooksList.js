@@ -8,9 +8,10 @@ function BooksList() {
 
   const dispatch = useDispatch();
 
-  function handleRemoveBook(book) {
+  const handleRemoveBook = (book) => {
     dispatch(removeBook(book));
-  }
+  };
+
   return (
     <div>
       <table>
