@@ -20,13 +20,12 @@ function BooksForm() {
   function handleSubmit(event) {
     event.preventDefault();
     dispatch(createBook({
-      id: Date.now().toString,
+      id: Date.now().toString(),
       title,
       category,
     }));
     setTitle('');
     setCategory('');
-    console.log(title, category);
   }
   const collection = [
     '--categories--',
@@ -39,7 +38,7 @@ function BooksForm() {
     'Sci-fi',
   ];
 
-  console.log(title, category);
+  console.log('title :', title, 'category :', category);
   return (
     <div>
       <form action="">
