@@ -5,7 +5,6 @@ import { removeBook } from '../actions/index';
 
 function BooksList() {
   const books = useSelector((state) => state.booksReducer.books);
-  console.log(books);
 
   const dispatch = useDispatch();
 

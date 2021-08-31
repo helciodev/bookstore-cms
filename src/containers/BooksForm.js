@@ -38,7 +38,6 @@ function BooksForm() {
     'Sci-fi',
   ];
 
-  console.log('title :', title, 'category :', category);
   return (
     <div>
       <form action="">

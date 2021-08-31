@@ -49,7 +49,6 @@ import { createBook } from './actions/index';
 // };
 
 const store = createStore(rootReducer);
-console.log('GetState');
 
 store.dispatch(createBook({
   id: Math.random().toFixed(2).toString(),
@@ -91,7 +90,6 @@ store.dispatch(createBook({
   category: 'Action',
 }));
 
-console.log(store.getState());
 ReactDOM.render(
   <Provider store={store}>
     <App />
