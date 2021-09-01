@@ -18,7 +18,7 @@ function booksReducer(state = initialState, action) {
       books: [
         ...state.books,
         {
-          id: Date.now(),
+          id: Math.ceil(Math.random() * 100 + 1).toString(),
           title: action.book.title,
           category: action.book.category,
         },

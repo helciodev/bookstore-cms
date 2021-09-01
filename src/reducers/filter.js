@@ -7,7 +7,7 @@ const initialState = {
 function filterReducer(state = initialState, action) {
   if (action.type === CHANGE_FILTER) {
     return {
-      filter: action.filter,
+      filter: action.category,
     };
   }
 

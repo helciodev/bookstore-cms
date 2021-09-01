@@ -16,8 +16,9 @@ export function removeBook(book) {
   };
 }
 
-export function createFilter() {
+export function createFilter(category) {
   return {
     type: CHANGE_FILTER,
+    category,
   };
 }
