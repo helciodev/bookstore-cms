@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
+import CategoryFilter from '../components/CategoryFilter';
 import { removeBook } from '../actions/index';
 
 function BooksList() {
@@ -21,6 +22,7 @@ function BooksList() {
           </tr>
         </thead>
         <tbody>
+          <CategoryFilter />
           {books.map((book) => (
             <Book
               key={book.id}
