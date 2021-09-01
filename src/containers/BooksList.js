@@ -13,7 +13,6 @@ function BooksList() {
 
   const handleFilter = (event) => {
     const { name, value } = event.target;
-    console.log(filter);
     if (name === 'categoryFilter') {
       if (value !== 'All') {
         dispatch(createFilter(value));
@@ -21,7 +20,6 @@ function BooksList() {
         dispatch(createFilter(''));
       }
     }
-    console.log(books, filter);
   };
   const unFiltered = books.map((book) => (
     <Book

@@ -42,7 +42,6 @@ store.dispatch(createBook({
   category: 'Action',
 }));
 
-console.log(store.getState());
 ReactDOM.render(
   <Provider store={store}>
     <App />
