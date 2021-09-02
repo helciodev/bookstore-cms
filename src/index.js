@@ -6,6 +6,7 @@ import { createStore } from 'redux';
 import App from './components/App';
 import rootReducer from './reducers/index';
 import { createBook } from './actions/index';
+import './styles.css';
 
 const store = createStore(rootReducer);
 
