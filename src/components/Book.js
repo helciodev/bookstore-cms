@@ -13,9 +13,9 @@ function Book({
         <h3 className="book-title">{title}</h3>
         <p className="author">Cristian Dior</p>
         <ul className="action">
-          <li className="action-item">comments</li>
-          <li className="action-item"><button type="button" onClick={() => removeBook({ id, title, category })}>remove</button></li>
-          <li className="action-item">remove</li>
+          <li className="action-item">Comments</li>
+          <li className="action-item"><button type="button" onClick={() => removeBook({ id, title, category })}>Remove</button></li>
+          <li className="action-item">Edit</li>
         </ul>
       </div>
       <div className="percentage">

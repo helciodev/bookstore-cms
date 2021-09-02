@@ -8,7 +8,6 @@
 - [Built with](#built-with)
 - [Getting started](#getting-started)
   - [Installation instructions](#installation-instructions)
-  - [Testing](#testing)
 - [Author](#author)
 - [Show your support](#show-your-support)
 - [License](#-license)
@@ -17,12 +16,14 @@
 
 ## About
 
-THis a bookstore project, built with react and redux
+THis a bookstore project, built with react and redux for a fictional company called Magic-books Inc based in Germany
 
 
 ## Features
 
-to add
+- User can delete books
+- User can choose to view books by category
+- User can add new books
 
 ## Live Demo
 
@@ -57,10 +58,6 @@ Follow along the steps below to get a copy at your local machine.
 - Install the npm package with `npm install`
 - Start the server with `npm start`
 - The site should automatically open in your browser at http://localhost:3000/ if it didn't then open your browser with that link.
-
-### testing
-
-- To add
 
 ## Author
 
