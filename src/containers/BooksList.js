@@ -30,16 +30,7 @@ function BooksList() {
   ));
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th colSpan="2">Books</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filter ? filtered : unFiltered}
-        </tbody>
-      </table>
+      {filter ? filtered : unFiltered}
     </div>
   );
 }

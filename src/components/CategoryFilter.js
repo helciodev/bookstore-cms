@@ -13,7 +13,7 @@ function CategoryFilter({ handleFilter }) {
           <option value="Learning">Learning</option>
           <option value="History">History</option>
           <option value="Horror">Horror</option>
-          <option value="Sci-fi">Sci-fi</option>
+          <option value="Sci-Fi">Sci-fi</option>
         </select>
       </td>
     </tr>

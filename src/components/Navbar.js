@@ -21,7 +21,7 @@ function Navbar() {
     <navbar className="navbar">
       <div className="parent">
         <div className="Bookstore-CMS">Bookstore CMS</div>
-        <div className="BOOKS">books</div>
+        <div className="BOOKS">Books</div>
         <div>
           <CategoryFilter handleFilter={handleFilter} />
         </div>

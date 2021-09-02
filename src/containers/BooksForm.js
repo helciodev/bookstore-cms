@@ -39,13 +39,15 @@ function BooksForm() {
   ];
 
   return (
-    <div>
+    <div className="add-books">
+      <h2 className="title">ADD BOOK</h2>
       <form action="">
-        <input type="text" name="title" value={title} onChange={handleChange} placeholder="book title" />
+        <input className="Lesson-Panel" type="text" name="title" value={title} onChange={handleChange} placeholder="book title" />
         <select
           value={category}
           name="category"
           onChange={handleChange}
+          className="Lesson-Panel-category"
         >
           {collection.map((category) => (
             <option key={category} value={category}>
@@ -55,7 +57,7 @@ function BooksForm() {
             </option>
           ))}
         </select>
-        <button type="submit" onClick={handleSubmit}>submit</button>
+        <button className="Rectangle-2" type="submit" onClick={handleSubmit}>ADD BOOK</button>
       </form>
     </div>
   );
