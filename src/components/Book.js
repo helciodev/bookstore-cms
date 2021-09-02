@@ -40,7 +40,7 @@ function Book({
           current chapter
         </span>
         <p className="chapter">chapter 17</p>
-        <button className="update-btn" type="button">Update chapter</button>
+        <button className="update-btn" type="button">UPDATE PROGRESS</button>
       </div>
     </div>
   );

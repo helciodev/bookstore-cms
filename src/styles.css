@@ -39,6 +39,15 @@ body {
   align-items: baseline;
 }
 
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #e8e8e8;
+  border-radius: 100%;
+  padding: 10px;
+}
+
 .Bookstore-CMS {
   width: 15rem;
   height: 2.313rem;
@@ -50,7 +59,7 @@ body {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--azure);
+  color: var(--Azure);
 }
 
 .BOOKS {
@@ -128,7 +137,7 @@ body {
   margin: 1.188rem 0 0 2.125rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
-  background-color: var(--azure);
+  background-color: var(--Azure);
   outline: none;
   font-family: var(--robotslab);
   font-size: 0.813rem;
@@ -290,7 +299,7 @@ button {
   margin: 2rem 0 0 2.125rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
-  background-color: var(--azure);
+  background-color: var(--Azure);
   outline: none;
   font-family: var(--robotslab);
   font-size: 0.813rem;
