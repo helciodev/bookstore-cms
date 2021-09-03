@@ -22,7 +22,7 @@ body {
 
 .hr {
   margin: 1rem 3rem;
-  color:#e8e8e8;
+  color: #e8e8e8;
   opacity: 0.3;
 }
 
@@ -84,7 +84,7 @@ body {
   border: 1px solid #e8e8e8;
   font-size: 16px;
   background-color: #fff;
-  }
+}
 
 .Lesson-Panel {
   width: 41.5rem;
@@ -164,7 +164,8 @@ body {
   margin-top: 2rem;
 }
 
-.action-item, .action-button-click {
+.action-item,
+.action-button-click {
   width: 4.563rem;
   height: 1.188rem;
   margin: 0 1rem 0.125rem 0;
