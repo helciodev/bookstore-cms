@@ -13,8 +13,8 @@ function Book({
         <h3 className="book-title">{title}</h3>
         <p className="author">Cristian Dior</p>
         <ul className="action">
-          <li className="action-item">Comments</li>
-          <li className="action-item"><button type="button" onClick={() => removeBook({ id, title, category })}>Remove</button></li>
+          <li className="action-item comments">Comments</li>
+          <li className="action-item action-button"><button type="button" className="action-button-click" onClick={() => removeBook({ id, title, category })}>Remove</button></li>
           <li className="action-item">Edit</li>
         </ul>
       </div>
@@ -30,7 +30,7 @@ function Book({
             />
           </svg>
         </div>
-        <div>
+        <div className="percent-parent">
           <p className="percentage-num">64 %</p>
           <p className="completed">completed</p>
         </div>
