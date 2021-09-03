@@ -40,7 +40,7 @@ function BooksForm() {
 
   return (
     <div className="add-books">
-      <h2 className="title">ADD BOOK</h2>
+      <h2 className="title">ADD NEW BOOK</h2>
       <form action="">
         <input className="Lesson-Panel" type="text" name="title" value={title} onChange={handleChange} placeholder="book title" />
         <select

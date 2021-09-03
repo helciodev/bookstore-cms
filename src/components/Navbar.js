@@ -28,7 +28,7 @@ function Navbar() {
       </div>
 
       <div>
-        user
+        <img className="user-profile" src="./user.svg" alt="user-profile-icon" />
       </div>
     </navbar>
   );
